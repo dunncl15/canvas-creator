@@ -20,6 +20,7 @@
     "canvas-sketch": "^0.2.0",
     "canvas-sketch-util": "^1.6.0",
     "nice-color-palettes": "^2.0.0",
+    "prettier": "^1.15.3",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },

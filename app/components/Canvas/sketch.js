@@ -7,8 +7,8 @@ import palettes from 'nice-color-palettes';
 class Canvas extends Component {
   constructor() {
     super();
-    this.state = {}
-    this.sketch = this.sketch.bind(this)
+    this.state = {};
+    this.sketch = this.sketch.bind(this);
   }
 
   componentDidMount() {
@@ -36,7 +36,7 @@ class Canvas extends Component {
     return points;
   }
 
-  sketch() {    
+  sketch() {
     // random.setSeed(512)
     const points = this.createGrid().filter(() => random.value() > 0.5);
     const margin = 200;
@@ -52,7 +52,7 @@ class Canvas extends Component {
 
         context.save();
         context.fillStyle = color;
-        context.font = `${radius * width}px Open Sans`
+        context.font = `${radius * width}px Open Sans`;
         context.translate(x, y);
         context.rotate(rotation);
         context.fillText('=', 0, 0);
