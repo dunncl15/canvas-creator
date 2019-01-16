@@ -19,7 +19,7 @@ class Canvas extends Component {
     const palette = random.shuffle(random.pick(palettes));
     console.log(palette);
     const points = [];
-    const count = 55;
+    const count = 98;
     for (let x = 0; x < count; x++) {
       for (let y = 0; y < count; y++) {
         const u = count <= 1 ? 0.5 : x / (count - 1);
